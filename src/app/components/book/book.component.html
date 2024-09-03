@@ -1,0 +1,10 @@
+<app-search-bar
+  (searchResults)="handleSearchResults($event)"
+  (searchError)="handleSearchError($event)"
+  (searchLoading)="handleSearchLoading($event)"
+></app-search-bar>
+<app-books-list
+  [books]="books"
+  [loading]="loading"
+  [error]="error"
+></app-books-list>
